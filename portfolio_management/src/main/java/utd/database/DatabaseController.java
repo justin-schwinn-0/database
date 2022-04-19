@@ -95,7 +95,7 @@ public class DatabaseController {
 
     public boolean createUser(String username, String password, String fname, String lname) throws SQLException {
         PreparedStatement ps = connection.prepareStatement(CREATE_USER);
-        ps.setString(1, (new User().generateAcountID()));
+        ps.setString(1, (User.generateAcountID()));
         ps.setString(2, username);
         ps.setString(3, password);
         ps.setString(4, fname);

@@ -22,7 +22,7 @@ public class User {
         stocks.add(new Holding(stock, ammount));
     }
 
-    public String generateAcountID(){
+    public static String generateAcountID(){
         String id = "";
 
         Random rand = new Random();
@@ -46,7 +46,7 @@ public class User {
         return phrase;
     }
 
-    private String generateMnemonicPhrase(){
+    public static String generateMnemonicPhrase(){
         String phrase = "";
         char[] alphabet = new char[26];
         int character = 65;
